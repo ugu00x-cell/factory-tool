@@ -1,15 +1,32 @@
 # factory-tool
 
-第2工場のデータから必要な機械情報を抽出するPythonツールです。
+第2工場の Excel データから機械情報を抽出するツールです。
 
 ## 概要
-Excelデータから特定の機種グループ（第2工場）を抽出します。
+Excelファイルから「第2工場」のデータを抽出し、
+必要な項目だけを整理して出力します。
+
+## 必要環境
+- Python 3.x
+- openpyxl
+
+## インストール
+以下を実行してください：
+
+pip install openpyxl
 
 ## 使い方
-1. Pythonをインストール
-2. 必要ライブラリをインストール
-   pip install openpyxl
-3. スクリプトを実行
+1. Excelファイルを準備
+2. スクリプトを実行
 
-## ファイル
-- factory2_extract.py : メイン処理
+python factory2_extract.py
+
+## ファイル構成
+- factory2_extract.py : 抽出処理メイン
+
+## 注意
+- Excelに「OrderNo」列が存在する必要があります
+- 特定フォーマット前提です
+
+## 作者
+ugu00x-cell
